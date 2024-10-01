@@ -121,7 +121,7 @@ p {
     color: var(--Green);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
 
     body {
         line-height: 1rem;
