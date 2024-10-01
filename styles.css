@@ -10,9 +10,10 @@
 --ff-base: "Inter", sans-serif;
 
 /* Font Size */
---fs-h2: 1.8rem;
---fs-h3: 1rem;
---fs-p: .8rem;
+--fs-l: 1.8rem;
+--fs-m: 1rem;
+--fs-s: .8rem;
+--fs-xs: .5rem;
 
 /* Font Weight */
 --fw-light: 400;
@@ -32,7 +33,7 @@ html{
 
 body{
     font-family: var(--ff-base);
-    height: 100%;
+    min-height: 100%;
     line-height: 2rem;
     color: var(--White);
 }
@@ -66,18 +67,18 @@ img {
 }
 
 h2 {
-    font-size: var(--fs-h2);
+    font-size: var(--fs-l);
     font-weight: var(--fw-normal);
 }
 
 h3 {
-    font-size: var(--fs-h3);
+    font-size: var(--fs-m);
     color: var(--Green);
     font-weight: var(--fw-bold);
 }
 
 p {
-    font-size: var(--fs-p);
+    font-size: var(--fs-s);
     font-weight: var(--fw-light);
 }
 
@@ -97,9 +98,9 @@ p {
     border-radius: 8px;
     height: 2.5rem;
     width: 18rem;
-    
+
     color: var(--White);
-    font-size: var(--fs-p);
+    font-size: var(--fs-s);
     font-weight: var(--fw-bold);
     text-decoration: none;
 }
@@ -113,9 +114,40 @@ p {
     text-decoration: none;
     color: var(--White);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-m);
 }
 
 .attribution a:hover {
     color: var(--Green);
+}
+
+@media (max-width: 320px) {
+
+    body {
+        line-height: 1rem;
+    }
+
+    .container {
+        width: 18rem;
+    }
+
+    .button a {
+        width: 14rem;
+    }
+
+    h2 {
+        font-size: var(--fs-m);
+    }
+
+    h3 {
+        font-size: var(--fs-s);
+    }
+
+    p {
+        font-size: var(--fs-xs);
+    }
+
+    .attribution, .attribution a {
+        font-size: var(--fs-s);
+    }
 }
