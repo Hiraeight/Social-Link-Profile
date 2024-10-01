@@ -1,0 +1,121 @@
+:root {
+/* Colors */
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+
+/* Font Family */
+--ff-base: "Inter", sans-serif;
+
+/* Font Size */
+--fs-h2: 1.8rem;
+--fs-h3: 1rem;
+--fs-p: .8rem;
+
+/* Font Weight */
+--fw-light: 400;
+--fw-normal: 600;
+--fw-bold: 700;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--Grey-900);
+}
+
+body{
+    font-family: var(--ff-base);
+    height: 100%;
+    line-height: 2rem;
+    color: var(--White);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--Grey-800);
+    width: 23rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-normal);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    color: var(--Green);
+    font-weight: var(--fw-bold);
+}
+
+p {
+    font-size: var(--fs-p);
+    font-weight: var(--fw-light);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.button a{
+    background-color: var(--Grey-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    height: 2.5rem;
+    width: 18rem;
+    
+    color: var(--White);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: var(--Grey-800);
+    background-color: var(--Green);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+}
+
+.attribution a:hover {
+    color: var(--Green);
+}
